@@ -1,0 +1,32 @@
+{
+  "name": "webgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html"
+  },
+  "author": "EMP CI <emp@zulily.com> (https://gitlab.corp.zulily.com/groups/emp)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/three": "^0.103.2",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-typescript": "^1.0.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "three": "^0.109.0",
+    "three-orbitcontrols": "^2.108.1",
+    "three-outlinepass": "^1.0.7"
+  },
+  "alias": {
+    "~assets": "./assets"
+  }
+}
