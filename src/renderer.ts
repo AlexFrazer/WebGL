@@ -5,6 +5,7 @@ import { ShaderPass, FXAAShader } from 'postprocessing';
 import { OutlinePass, RenderPass, EffectComposer } from 'three-outlinepass';
 import scene from './scene';
 import camera from './camera';
+import Tween from '@tweenjs/tween.js';
 
 export const renderer = new Three.WebGLRenderer({ antialias: true });
 export const controls = new OrbitControls(camera, renderer.domElement);
@@ -40,6 +41,7 @@ export function init(): void {
 }
 
 export function animate(): void {
+  Tween.update();
   window.requestAnimationFrame(animate);
   controls.update();
   renderer.render(scene, camera);

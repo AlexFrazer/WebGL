@@ -10,6 +10,7 @@
   "author": "EMP CI <emp@zulily.com> (https://gitlab.corp.zulily.com/groups/emp)",
   "license": "ISC",
   "devDependencies": {
+    "@types/dat.gui": "^0.7.5",
     "@types/three": "^0.103.2",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "@tweenjs/tween.js": "^18.3.1",
+    "dat.gui": "^0.7.6",
     "postprocessing": "^6.8.5",
     "three": "^0.109.0",
     "three-addons": "^1.2.0",
