@@ -1,7 +1,7 @@
 import { PerspectiveCamera } from 'three';
 
 export const camera = new PerspectiveCamera(
-  45,
+  75,
   window.innerWidth / window.innerHeight,
   0.01,
   100000,

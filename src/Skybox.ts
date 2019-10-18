@@ -5,17 +5,38 @@ import {
   DoubleSide,
   Mesh,
 } from 'three';
+// eslint-disable-next-line
+// @ts-ignore
 import background from './assets/textures/8k_stars.jpg';
 
 const texture = new TextureLoader().load(background);
-
 const geometry = new BoxGeometry(10000, 10000, 10000);
 
-const material = new MeshBasicMaterial({
-  map: texture,
-  side: DoubleSide,
-});
-
-const skybox = new Mesh(geometry, material);
+const skybox = new Mesh(geometry, [
+  new MeshBasicMaterial({
+    map: texture,
+    side: DoubleSide,
+  }),
+  new MeshBasicMaterial({
+    map: texture,
+    side: DoubleSide,
+  }),
+  new MeshBasicMaterial({
+    map: texture,
+    side: DoubleSide,
+  }),
+  new MeshBasicMaterial({
+    map: texture,
+    side: DoubleSide,
+  }),
+  new MeshBasicMaterial({
+    map: texture,
+    side: DoubleSide,
+  }),
+  new MeshBasicMaterial({
+    map: texture,
+    side: DoubleSide,
+  }),
+]);
 
 export default skybox;
