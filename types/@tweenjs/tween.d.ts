@@ -10,6 +10,7 @@ declare module '@tweenjs/tween.js' {
     to(point: Point3D, duration: number): Tween;
     easing(easing: typeof Easing): Tween;
     onUpdate(cb: (point: Point3D) => void): Tween;
+    onComplete(cb: () => void): Tween;
     start(): void;
   }
   export function update(): void;

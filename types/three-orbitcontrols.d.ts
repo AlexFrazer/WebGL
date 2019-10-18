@@ -3,5 +3,6 @@ declare module 'three-orbitcontrols' {
   export default class OrbitControls {
     constructor(camera: Camera, element: WebGLRenderer['domElement']);
     update(): void;
+    enabled: boolean;
   }
 }

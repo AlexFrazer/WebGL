@@ -60,6 +60,7 @@ export function tweenCamera(
     position: { x: originX, y: originY, z: originZ },
   }: PerspectiveCamera = camera,
   easing = Tween.Easing.Quadratic.InOut,
+  onComplete = () => {},
 ): void {
   new Tween.Tween({
     x: originX,
@@ -80,5 +81,6 @@ export function tweenCamera(
       camera.position.y = y;
       camera.position.z = z;
     })
+    .onComplete(onComplete)
     .start();
 }

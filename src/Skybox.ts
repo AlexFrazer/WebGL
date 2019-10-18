@@ -10,7 +10,7 @@ import {
 import background from './assets/textures/8k_stars.jpg';
 
 const texture = new TextureLoader().load(background);
-const geometry = new BoxGeometry(10000, 10000, 10000);
+const geometry = new BoxGeometry(1000, 1000, 1000);
 
 const skybox = new Mesh(geometry, [
   new MeshBasicMaterial({
