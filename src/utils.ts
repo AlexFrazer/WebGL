@@ -57,10 +57,10 @@ interface Point3D {
 export function tweenCamera(
   { x: targetX, y: targetY, z: targetZ }: Point3D,
   {
-    position: { x: originX, y: originY, z: originZ },
-  }: PerspectiveCamera = camera,
-  easing = Tween.Easing.Quadratic.InOut,
-  onComplete = () => {},
+    camera: { position: { x: originX, y: originY, z: originZ } } = camera,
+    easing: easing = Tween.Easing.Quadratic.InOut,
+    onComplete = () => {},
+  } = {},
 ): void {
   new Tween.Tween({
     x: originX,
