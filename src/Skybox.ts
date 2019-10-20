@@ -5,9 +5,7 @@ import {
   DoubleSide,
   Mesh,
 } from 'three';
-// eslint-disable-next-line
-// @ts-ignore
-import background from './assets/textures/8k_stars.jpg';
+import background from './assets/textures/8k_stars_milky_way.jpg';
 
 const texture = new TextureLoader().load(background);
 const geometry = new BoxGeometry(1000, 1000, 1000);
